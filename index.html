@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSV Upload Test</title>
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <br>
+    <center>
+      <div class="container">
+        <form id="upload_form" enctype="multipart/form-data" name="file">
+          <div>
+            <label>Select file to upload</label>
+            <input type="file" id="fileinput">
+          </div>
+          <br>
+          <button type="submit">Upload</button>
+        </form>
+      </div>
+    </center>
+    <hr>
+    <center>
+      <h2>Contact List:</h2>
+      <table id="table" class="table">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Phone</th>
+            <th>Email</th>
+            <th>LinkedIn</th>
+          </tr>
+        </thead>
+        <tbody id="tbody"></tbody>
+      </table>
+    </center>
+    <script type="text/javascript" src="app.js"></script>
+  </body>
+</html>
